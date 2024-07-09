@@ -1,11 +1,10 @@
 from django.contrib import admin
 from django.urls import path
 from . import views
-app_name = "dashboard"
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('predictions/', views.predictions, name='predictions'),
+    path('', views.index, name='dashboard-index'),
+    path('predictions/', views.predictions, name='dashboard-predictions'),
 
     # path('blog/<int:id>/', views.show, name='blog-show'),
     # path('blog/create/', views.create, name='blog-create'),
